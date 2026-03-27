@@ -2966,59 +2966,6 @@ body.is-touch .poptrox-popup .closer {
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
 }
 
-.screenshot-placeholder {
-  width: 100%;
-  max-width: 400px;
-  aspect-ratio: 9/16;
-  background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
-  border-radius: 12px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border: 2px dashed #ddd;
-  transition: all 0.3s ease;
-}
-.screenshot-placeholder:hover {
-  border-color: #e49d43;
-  background: linear-gradient(135deg, #fafafa 0%, #f0f0f0 100%);
-}
-
-.placeholder-icon {
-  font-size: 4em;
-  margin-bottom: 0.3em;
-  opacity: 0.5;
-}
-
-.placeholder-text {
-  font-size: 1.1em;
-  color: #a2a2a2;
-  font-weight: 500;
-  opacity: 0.6;
-}
-
-.project-collaborate {
-  background: rgba(228, 157, 67, 0.05);
-  padding: 1.5em;
-  border-radius: 8px;
-  border-left: 3px solid #e49d43;
-}
-.project-collaborate p {
-  margin: 0;
-  line-height: 1.8;
-  color: #a2a2a2;
-}
-.project-collaborate strong {
-  color: #787878;
-}
-.project-collaborate a {
-  color: #e49d43;
-  font-weight: 600;
-}
-.project-collaborate a:hover {
-  text-decoration: underline;
-}
-
 .project-collaborate-compact {
   background: rgba(228, 157, 67, 0.05);
   padding: 0.8em 1.2em;
@@ -3081,9 +3028,6 @@ body.is-touch .poptrox-popup .closer {
   .screenshot-placeholder {
     max-width: 100%;
     aspect-ratio: 3/4;
-  }
-  .project-collaborate {
-    padding: 1.2em;
   }
   .app-screenshot {
     max-width: 100%;

@@ -2730,8 +2730,8 @@ body.is-touch .poptrox-popup .closer {
 
 .publication-number {
   position: absolute;
-  top: 1.5em;
-  right: 1.5em;
+  top: 0.45em;
+  right: 0.95em;
   font-size: 0.85em;
   font-weight: 600;
   color: #e49d43;

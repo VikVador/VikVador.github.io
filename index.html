@@ -1,12 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	------------------
-		  CREDITS
-	------------------
-	Strata by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>Victor Mangeleer</title>
@@ -38,35 +30,27 @@
 				</nav>
 
 				<!-- About Tab -->
-				<section id="about" class="tab-content active">
-					<!-- Content loaded from partials/about.html -->
-				</section>
+				<section id="about" class="tab-content active"></section>
 
 				<!-- Publications Tab -->
-				<section id="publications" class="tab-content">
-					<!-- Content loaded from partials/publications.html -->
-				</section>
+				<section id="publications" class="tab-content"></section>
 
 				<!-- Conferences Tab -->
-				<section id="conferences" class="tab-content">
-					<!-- Content loaded from partials/conferences.html -->
-				</section>
+				<section id="conferences" class="tab-content"></section>
 
 				<!-- Projects Tab -->
-				<section id="projects" class="tab-content">
-					<!-- Content loaded from partials/projects.html -->
-				</section>
+				<section id="projects" class="tab-content"></section>
 			</div>
 
 		<!-- Footer -->
 			<footer id="footer">
 				<div class="inner">
 					<ul class="icons">
-						<li><a href="https://github.com/VikVador" 			      target="_blank" class="icon brands fa-github"><span   class="label">Github</span></a></li>
-						<li><a href="https://www.linkedin.com/in/victor-mangeleer-264a1420a/" target="_blank" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
-						<li><a href="https://orcid.org/0009-0000-9131-1338" 		      target="_blank" class="icon brands fa-orcid"><span class="label">Orcid</span></a></li>
+						<li><a href="https://github.com/VikVador" 			      				   target="_blank" class="icon brands fa-github"><span   	  class="label">Github</span></a></li>
+						<li><a href="https://www.linkedin.com/in/victor-mangeleer-264a1420a/" 	   target="_blank" class="icon brands fa-linkedin"><span 	  class="label">Linkedin</span></a></li>
+						<li><a href="https://orcid.org/0009-0000-9131-1338" 		      		   target="_blank" class="icon brands fa-orcid"><span 		  class="label">Orcid</span></a></li>
 						<li><a href="https://scholar.google.com/citations?hl=en&user=qM9V_6QAAAAJ" target="_blank" class="icon solid fa-graduation-cap"><span class="label">Google Scholar</span></a></li>
-						<li><a href="mailto:vmangeleer@uliege.be"			      target="_blank" class="icon solid fa-envelope"><span  class="label">Email</span></a></li>
+						<li><a href="mailto:vmangeleer@uliege.be"			      				   target="_blank" class="icon solid fa-envelope"><span  	  class="label">Email</span></a></li>
 					</ul>
 					<ul class="copyright">
 						<li>&copy; Victor Mangeleer 2026</li>
@@ -81,19 +65,24 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/renderer.js"></script>
 
 			<!-- Tab Navigation Script -->
 			<script>
-				// Load content from external HTML files
 				function loadTabContent(tabName) {
 					var contentElement = document.getElementById(tabName);
 
-					// Only load if content is empty (hasn't been loaded yet)
-					if (contentElement.innerHTML.trim() === '' || contentElement.innerHTML.includes('Content loaded from')) {
+					if (contentElement.innerHTML.trim() === '') {
 						fetch('partials/' + tabName + '.html')
 							.then(response => response.text())
 							.then(html => {
 								contentElement.innerHTML = html;
+								// innerHTML does not execute scripts — recreate them so they run
+								contentElement.querySelectorAll('script').forEach(oldScript => {
+									const newScript = document.createElement('script');
+									newScript.textContent = oldScript.textContent;
+									oldScript.replaceWith(newScript);
+								});
 							})
 							.catch(error => {
 								console.error('Error loading partials/' + tabName + '.html:', error);

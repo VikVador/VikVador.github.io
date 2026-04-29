@@ -1,0 +1,100 @@
+[
+  {
+    "number": 4,
+    "title": "The Physical Limit of Neural Hypoxia Detection in the Black Sea from Satellite Observations",
+    "venue": "Preprint submitted to Geophysical Research Letters, 2026",
+    "venue_url": null,
+    "tags": [
+      { "type": "method", "label": "diffusion" },
+      { "type": "method", "label": "data assimilation" },
+      { "type": "domain", "label": "hypoxia" }
+    ],
+    "authors": "<strong>Victor Mangeleer</strong>, Luc Vandenbulcke, Marilaure Grégoire & Gilles Louppe",
+    "abstract": "We investigate whether satellite observations alone can reliably detect coastal hypoxia using deep generative neural networks. We train a diffusion model on numerical ocean simulations to solve the Bayesian inverse problem relating surface observations to subsurface oxygen levels. Our results show accurate state estimation within the mixing layer year-round, detecting 38% of summer hypoxic events with 47% precision. This work establishes baseline capabilities and physical limits for hypoxia detection from space.",
+    "links": {
+      "paper": "https://arxiv.org/abs/2604.25608",
+      "thesis": null,
+      "github": "https://github.com/VikVador/Poseidon",
+      "gitlab": null,
+      "website": null
+    }
+  },
+  {
+    "number": 3,
+    "title": "The BiogeochemicAl Model for Hypoxic and Benthic Influenced areas: BAMHBI v1.0",
+    "venue": "Geoscientific Model Development, 2026",
+    "venue_url": null,
+    "tags": [
+      { "type": "method", "label": "numerical model" },
+      { "type": "domain", "label": "biogeochemistry" },
+      { "type": "domain", "label": "hypoxia" }
+    ],
+    "authors": "Marilaure Grégoire, Luc Vandenbulcke, Séverine Chevalier, Mathurin Choblet, Ilya Drozd, Jean-François Grailet, Evgeny Ivanov, Loïc Macé, Polina Verezemskaya, Haolin Yu, Lauranne Alaerts, Ny Riana Randresihaja, <strong>Victor Mangeleer</strong>, Guillaume Maertens de Noordhout, Arthur Capet, Catherine Meulders, Anne Mouchet, Guy Munhoven & Karline Soetaert",
+    "abstract": "BAMHBI is a state-of-the-art biogeochemical model designed for modeling low oxygen environments and the generation of sulfidic waters. The model describes the cycling of carbon, nitrogen, phosphorus, silicon and oxygen through the marine foodweb, involving 22 state variables from bacteria up to mesozooplankton. It includes an optional benthic module that efficiently models the degradation of sedimentary organic matter and benthic-pelagic fluxes.",
+    "links": {
+      "paper": "https://doi.org/10.5194/gmd-19-2137-2026",
+      "thesis": null,
+      "github": null,
+      "gitlab": "https://gitlab.uliege.be/especes/mast",
+      "website": null
+    }
+  },
+  {
+    "number": 2,
+    "title": "Appa: Bending Weather Dynamics with Latent Diffusion Models for Global Data Assimilation",
+    "venue": "ML4PS, NeurIPS 2025",
+    "venue_url": "https://neurips.cc/virtual/2025/loc/san-diego/122972",
+    "tags": [
+      { "type": "method", "label": "diffusion" },
+      { "type": "method", "label": "data assimilation" },
+      { "type": "domain", "label": "atmosphere" }
+    ],
+    "authors": "Gérôme Andry, François Rozet, Sacha Lewin, Omer Rochman, <strong>Victor Mangeleer</strong>, Matthias Pirlet, Elise Faulx, Marilaure Grégoire & Gilles Louppe",
+    "abstract": "We present Appa, a novel approach for global weather data assimilation using latent diffusion models. By learning to bend weather dynamics in a compressed latent space, Appa efficiently incorporates observations to improve forecast accuracy while maintaining physical consistency. This work demonstrates the potential of generative models for operational weather prediction systems.",
+    "links": {
+      "paper": "https://arxiv.org/abs/2504.18720",
+      "thesis": null,
+      "github": "https://github.com/montefiore-sail/appa",
+      "gitlab": null,
+      "website": "https://montefiore-sail.github.io/appa/"
+    }
+  },
+  {
+    "number": 1,
+    "title": "Robust Ocean Subgrid-Scale Parameterizations Using Fourier Neural Operators",
+    "venue": "ML4PS, NeurIPS 2023",
+    "venue_url": null,
+    "tags": [
+      { "type": "method", "label": "fourier neural operators" },
+      { "type": "domain", "label": "subgrid-scale" }
+    ],
+    "authors": "<strong>Victor Mangeleer</strong> & Gilles Louppe",
+    "abstract": "We develop robust subgrid-scale parameterizations for ocean models using Fourier Neural Operators (FNOs). By learning closure terms in spectral space, our approach captures multi-scale turbulent processes while maintaining numerical stability. The method shows promising generalization to unseen flow regimes, offering a path toward hybrid physics-ML ocean models.",
+    "links": {
+      "paper": "https://arxiv.org/abs/2310.02691",
+      "thesis": null,
+      "github": "https://github.com/VikVador/Ocean_FNO",
+      "gitlab": null,
+      "website": null
+    }
+  },
+  {
+    "number": null,
+    "title": "Ocean Parameterizations in an Idealized Model Using Machine Learning",
+    "venue": "Master Thesis, Université de Liège, 2023",
+    "venue_url": null,
+    "tags": [
+      { "type": "method", "label": "fourier neural operators" },
+      { "type": "domain", "label": "subgrid-scale" }
+    ],
+    "authors": "<strong>Victor Mangeleer</strong> & Gilles Louppe",
+    "abstract": "This master thesis explores the use of machine learning to develop parameterizations for ocean models in idealized configurations. We investigate how neural networks can learn to represent unresolved physical processes, paving the way for more accurate and computationally efficient ocean simulations in climate models.",
+    "links": {
+      "paper": null,
+      "thesis": "https://orbi.uliege.be/handle/2268/309229",
+      "github": "https://github.com/VikVador/Ocean_FNO",
+      "gitlab": null,
+      "website": null
+    }
+  }
+]

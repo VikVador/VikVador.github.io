@@ -1,0 +1,11 @@
+[
+  {
+    "title": "Almanac",
+    "status": "iOS App • In Development",
+    "badge": "SwiftUI",
+    "description": "A <span class=\"highlight\">minimalist</span> iOS study companion that teaches students how to <span class=\"highlight\">break down</span> coursework into <span class=\"highlight\">realistic, achievable goals</span>. Unlike existing productivity apps that overwhelm with features, Almanac guides users through a <span class=\"highlight\">structured process</span> to create clear study plans in <span class=\"highlight\">under 5 minutes</span>, and then gets out of your way.",
+    "image": "images/almanac.png",
+    "image_alt": "Almanac App Screenshot",
+    "collaborate_text": "Feel free to reach out by email."
+  }
+]

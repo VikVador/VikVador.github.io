@@ -1,0 +1,7 @@
+{
+  "biography": "I am a PhD student at the <a href=\"http://www.uliege.be/\" target=\"_blank\">University of Liège</a> working at the intersection of oceanography, modeling, and deep learning. My research focuses on understanding ocean deoxygenation using deep learning, under the co-supervision of <a href=\"https://www.uliege.be/cms/c_9054334/fr/repertoire?uid=U016063\" target=\"_blank\">Marilaure Grégoire</a> and <a href=\"https://glouppe.github.io\" target=\"_blank\">Gilles Louppe</a> (<a href=\"https://modelling-for-aquatic-systems.github.io/website/pages/people.html\" target=\"_blank\">MAST</a> and <a href=\"https://glouppe.github.io/sail/\" target=\"_blank\">SAIL</a> teams). I develop generative neural emulators of large-scale ocean dynamics to explore scientific questions and interpret results through the lens of physics and biogeochemistry.",
+  "cv": {
+    "url": "assets/pdf/mangeleer-cv.pdf",
+    "updated": "March 2026"
+  }
+}
